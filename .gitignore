@@ -160,4 +160,5 @@ cython_debug/
 #.idea/
 
 # Exlude Day one export
-day_one.json
+day_one_export.json
+photos/
