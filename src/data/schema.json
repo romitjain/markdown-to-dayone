@@ -1,0 +1,437 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "tags": [
+                "Pizza",
+                "test2",
+                "diary",
+                "Photography",
+                "Test"
+            ],
+            "uuid": "E3264EA138CB44478294A8B1345A1DA0",
+            "starred": true,
+            "creationOSName": "macOS",
+            "timeZone": "America/Boise",
+            "photos": [
+                {
+                    "orderInEntry": 0,
+                    "creationDevice": "Adam’s MacBook Pro",
+                    "duration": 0,
+                    "type": "jpeg",
+                    "identifier": "88E71E5B4F1F4853A0F8A7F480A0168C",
+                    "date": "2020-04-16T19:55:51Z",
+                    "exposureBiasValue": 0,
+                    "height": 1400,
+                    "fnumber": "(null)",
+                    "width": 2100,
+                    "md5": "ef831aa9d45a55ab43cfe7b365e2274a",
+                    "isSketch": false,
+                    "focalLength": "(null)"
+                },
+                {
+                    "orderInEntry": 2,
+                    "creationDevice": "Adam’s MacBook Pro",
+                    "duration": 0,
+                    "type": "jpeg",
+                    "identifier": "8A04A939330C4182A83402BA944467D2",
+                    "date": "2020-04-16T19:56:11Z",
+                    "exposureBiasValue": 0,
+                    "height": 1401,
+                    "fnumber": "(null)",
+                    "width": 2100,
+                    "md5": "d86c27bdbbe2eafd1af06bc946e5bdbf",
+                    "isSketch": false,
+                    "focalLength": "(null)"
+                },
+                {
+                    "orderInEntry": 1,
+                    "creationDevice": "Adam’s MacBook Pro",
+                    "duration": 0,
+                    "type": "jpeg",
+                    "identifier": "6FC2E20B6DF04791B2B59A2B465B2561",
+                    "date": "2020-04-16T19:49:19Z",
+                    "exposureBiasValue": 0,
+                    "height": 1395,
+                    "fnumber": "(null)",
+                    "width": 2100,
+                    "md5": "d6e829e46cf5796efa9caf062e98d14c",
+                    "isSketch": false,
+                    "focalLength": "(null)"
+                }
+            ],
+            "text": "Notes from the Daily Commute\n\n![](dayone-moment://88E71E5B4F1F4853A0F8A7F480A0168C)\n\nThen the fourth cylinder fell\\-\\-a brilliant green meteor\\-\\-as I learned afterwards, in Bushey Park\\. Before the guns on the Richmond and Kingston line of hills began, there was a fitful cannonade far away in the southwest, due, I believe, to guns being fired haphazard before the black vapour could overwhelm the gunners\\.\n\nSo, setting about it as methodically as men might smoke out a wasps' nest, the Martians spread this strange stifling vapour over the Londonward country\\. The horns of the crescent slowly moved apart, until at last they formed a line from Hanwell to Coombe and Malden\\. All night through their destructive tubes advanced\\. Never once, after the Martian at St\\. George's Hill was brought down, did they give the artillery the ghost of a chance against them\\. Wherever there was a possibility of guns being laid for them unseen, a fresh canister of the black vapour was discharged, and where the guns were openly displayed the Heat\\-Ray was brought to bear\\.\n\n![](dayone-moment://6FC2E20B6DF04791B2B59A2B465B2561)\n\n![](dayone-moment://8A04A939330C4182A83402BA944467D2)\n\nBy midnight the blazing trees along the slopes of Richmond Park and the glare of Kingston Hill threw their light upon a network of black smoke, blotting out the whole valley of the Thames and extending as far as the eye could reach\\. And through this two Martians slowly waded, and turned their hissing steam jets this way and that\\.",
+            "creationDate": "2011-03-02T17:48:50Z",
+            "creationDeviceType": "MacBook Pro",
+            "modifiedDate": "2020-10-01T17:48:11Z",
+            "duration": 0,
+            "editingTime": 0
+        }
+    ],
+    "required": [
+        "tags",
+        "uuid",
+        "starred",
+        "timeZone",
+        "text",
+        "creationDate",
+        "modifiedDate"
+    ],
+    "properties": {
+        "tags": {
+            "$id": "#/properties/tags",
+            "type": "array",
+            "title": "The tags schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    "Pizza",
+                    "test2"
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/tags/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/tags/items/anyOf/0",
+                        "type": "string",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Pizza",
+                            "test2"
+                        ]
+                    }
+                ]
+            }
+        },
+        "uuid": {
+            "$id": "#/properties/uuid",
+            "type": "string",
+            "title": "The uuid schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "E3264EA138CB44478294A8B1345A1DA0"
+            ]
+        },
+        "starred": {
+            "$id": "#/properties/starred",
+            "type": "boolean",
+            "title": "The starred schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                true
+            ]
+        },
+        "creationOSName": {
+            "$id": "#/properties/creationOSName",
+            "type": "string",
+            "title": "The creationOSName schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "macOS"
+            ]
+        },
+        "timeZone": {
+            "$id": "#/properties/timeZone",
+            "type": "string",
+            "title": "The timeZone schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "America/Boise"
+            ]
+        },
+        "photos": {
+            "$id": "#/properties/photos",
+            "type": "array",
+            "title": "The photos schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "orderInEntry": 0,
+                        "creationDevice": "Adam’s MacBook Pro",
+                        "duration": 0,
+                        "type": "jpeg",
+                        "identifier": "88E71E5B4F1F4853A0F8A7F480A0168C",
+                        "date": "2020-04-16T19:55:51Z",
+                        "exposureBiasValue": 0,
+                        "height": 1400,
+                        "fnumber": "(null)",
+                        "width": 2100,
+                        "md5": "ef831aa9d45a55ab43cfe7b365e2274a",
+                        "isSketch": false,
+                        "focalLength": "(null)"
+                    },
+                    {
+                        "orderInEntry": 2,
+                        "creationDevice": "Adam’s MacBook Pro",
+                        "duration": 0,
+                        "type": "jpeg",
+                        "identifier": "8A04A939330C4182A83402BA944467D2",
+                        "date": "2020-04-16T19:56:11Z",
+                        "exposureBiasValue": 0,
+                        "height": 1401,
+                        "fnumber": "(null)",
+                        "width": 2100,
+                        "md5": "d86c27bdbbe2eafd1af06bc946e5bdbf",
+                        "isSketch": false,
+                        "focalLength": "(null)"
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/photos/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/photos/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "orderInEntry": 0,
+                                "creationDevice": "Adam’s MacBook Pro",
+                                "duration": 0,
+                                "type": "jpeg",
+                                "identifier": "88E71E5B4F1F4853A0F8A7F480A0168C",
+                                "date": "2020-04-16T19:55:51Z",
+                                "exposureBiasValue": 0,
+                                "height": 1400,
+                                "fnumber": "(null)",
+                                "width": 2100,
+                                "md5": "ef831aa9d45a55ab43cfe7b365e2274a",
+                                "isSketch": false,
+                                "focalLength": "(null)"
+                            }
+                        ],
+                        "required": [
+                            "orderInEntry",
+                            "creationDevice",
+                            "duration",
+                            "type",
+                            "identifier",
+                            "date",
+                            "exposureBiasValue",
+                            "height",
+                            "fnumber",
+                            "width",
+                            "md5",
+                            "isSketch",
+                            "focalLength"
+                        ],
+                        "properties": {
+                            "orderInEntry": {
+                                "$id": "#/properties/photos/items/anyOf/0/properties/orderInEntry",
+                                "type": "integer",
+                                "title": "The orderInEntry schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    0
+                                ]
+                            },
+                            "creationDevice": {
+                                "$id": "#/properties/photos/items/anyOf/0/properties/creationDevice",
+                                "type": "string",
+                                "title": "The creationDevice schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "Adam’s MacBook Pro"
+                                ]
+                            },
+                            "duration": {
+                                "$id": "#/properties/photos/items/anyOf/0/properties/duration",
+                                "type": "integer",
+                                "title": "The duration schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    0
+                                ]
+                            },
+                            "type": {
+                                "$id": "#/properties/photos/items/anyOf/0/properties/type",
+                                "type": "string",
+                                "title": "The type schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "jpeg"
+                                ]
+                            },
+                            "identifier": {
+                                "$id": "#/properties/photos/items/anyOf/0/properties/identifier",
+                                "type": "string",
+                                "title": "The identifier schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "88E71E5B4F1F4853A0F8A7F480A0168C"
+                                ]
+                            },
+                            "date": {
+                                "$id": "#/properties/photos/items/anyOf/0/properties/date",
+                                "type": "string",
+                                "title": "The date schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "2020-04-16T19:55:51Z"
+                                ]
+                            },
+                            "exposureBiasValue": {
+                                "$id": "#/properties/photos/items/anyOf/0/properties/exposureBiasValue",
+                                "type": "integer",
+                                "title": "The exposureBiasValue schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    0
+                                ]
+                            },
+                            "height": {
+                                "$id": "#/properties/photos/items/anyOf/0/properties/height",
+                                "type": "integer",
+                                "title": "The height schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    1400
+                                ]
+                            },
+                            "fnumber": {
+                                "$id": "#/properties/photos/items/anyOf/0/properties/fnumber",
+                                "type": "string",
+                                "title": "The fnumber schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "(null)"
+                                ]
+                            },
+                            "width": {
+                                "$id": "#/properties/photos/items/anyOf/0/properties/width",
+                                "type": "integer",
+                                "title": "The width schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    2100
+                                ]
+                            },
+                            "md5": {
+                                "$id": "#/properties/photos/items/anyOf/0/properties/md5",
+                                "type": "string",
+                                "title": "The md5 schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "ef831aa9d45a55ab43cfe7b365e2274a"
+                                ]
+                            },
+                            "isSketch": {
+                                "$id": "#/properties/photos/items/anyOf/0/properties/isSketch",
+                                "type": "boolean",
+                                "title": "The isSketch schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": false,
+                                "examples": [
+                                    false
+                                ]
+                            },
+                            "focalLength": {
+                                "$id": "#/properties/photos/items/anyOf/0/properties/focalLength",
+                                "type": "string",
+                                "title": "The focalLength schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "(null)"
+                                ]
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        },
+        "text": {
+            "$id": "#/properties/text",
+            "type": "string",
+            "title": "The text schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Notes from the Daily Commute\n\n![](dayone-moment://88E71E5B4F1F4853A0F8A7F480A0168C)\n\nThen the fourth cylinder fell\\-\\-a brilliant green meteor\\-\\-as I learned afterwards, in Bushey Park\\. Before the guns on the Richmond and Kingston line of hills began, there was a fitful cannonade far away in the southwest, due, I believe, to guns being fired haphazard before the black vapour could overwhelm the gunners\\.\n\nSo, setting about it as methodically as men might smoke out a wasps' nest, the Martians spread this strange stifling vapour over the Londonward country\\. The horns of the crescent slowly moved apart, until at last they formed a line from Hanwell to Coombe and Malden\\. All night through their destructive tubes advanced\\. Never once, after the Martian at St\\. George's Hill was brought down, did they give the artillery the ghost of a chance against them\\. Wherever there was a possibility of guns being laid for them unseen, a fresh canister of the black vapour was discharged, and where the guns were openly displayed the Heat\\-Ray was brought to bear\\.\n\n![](dayone-moment://6FC2E20B6DF04791B2B59A2B465B2561)\n\n![](dayone-moment://8A04A939330C4182A83402BA944467D2)\n\nBy midnight the blazing trees along the slopes of Richmond Park and the glare of Kingston Hill threw their light upon a network of black smoke, blotting out the whole valley of the Thames and extending as far as the eye could reach\\. And through this two Martians slowly waded, and turned their hissing steam jets this way and that\\."
+            ]
+        },
+        "creationDate": {
+            "$id": "#/properties/creationDate",
+            "type": "string",
+            "title": "The creationDate schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "2011-03-02T17:48:50Z"
+            ]
+        },
+        "creationDeviceType": {
+            "$id": "#/properties/creationDeviceType",
+            "type": "string",
+            "title": "The creationDeviceType schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "MacBook Pro"
+            ]
+        },
+        "modifiedDate": {
+            "$id": "#/properties/modifiedDate",
+            "type": "string",
+            "title": "The modifiedDate schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "2020-10-01T17:48:11Z"
+            ]
+        },
+        "duration": {
+            "$id": "#/properties/duration",
+            "type": "integer",
+            "title": "The duration schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                0
+            ]
+        },
+        "editingTime": {
+            "$id": "#/properties/editingTime",
+            "type": "integer",
+            "title": "The editingTime schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                0
+            ]
+        }
+    },
+    "additionalProperties": true
+}
