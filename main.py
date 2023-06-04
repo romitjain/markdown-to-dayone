@@ -3,8 +3,9 @@ import ujson
 import argparse
 import logging
 import logging.config
-from .file_converter import convert_md
-from .config import LoggingConfig
+
+from src.file_converter import convert_md
+from src.config import LoggingConfig
 
 logger = logging.getLogger()
 logging.config.dictConfig(LoggingConfig.logging_config)
@@ -54,5 +55,5 @@ if __name__ == '__main__':
         "entries": convert_md(source = args.source)
     }
 
-    with open(os.path.join(args.dest, "day_one_export.json"), "w") as fp:
+    with open(os.path.join(args.dest, "day_one_import.json"), "w") as fp:
         ujson.dump(entries, fp, escape_forward_slashes=False)
